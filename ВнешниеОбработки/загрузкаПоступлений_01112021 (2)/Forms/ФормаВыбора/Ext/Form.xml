@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Table name="СписокРеализаций" id="1">
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>СписокРеализаций</DataPath>
+			<RowPictureDataPath>СписокРеализаций.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокРеализацийКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокРеализацийКоманднаяПанель" id="3">
+				<ChildItems>
+					<Button name="ФормаВыбрать" id="206">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Выбрать</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выбрать</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ФормаВыбратьРасширеннаяПодсказка" id="207"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРеализацийРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="СписокРеализацийСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>СписокРеализаций</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокРеализацийСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="СписокРеализацийСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокРеализацийСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>СписокРеализаций</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокРеализацийСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СписокРеализацийСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокРеализацийУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>СписокРеализаций</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокРеализацийУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокРеализацийУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СписокРеализацийДата" id="14">
+					<DataPath>СписокРеализаций.Date</DataPath>
+					<ContextMenu name="СписокРеализацийДатаКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="СписокРеализацийДатаРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийНомер" id="17">
+					<DataPath>СписокРеализаций.Number</DataPath>
+					<ContextMenu name="СписокРеализацийНомерКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="СписокРеализацийНомерРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийКомментарий" id="104">
+					<DataPath>СписокРеализаций.Комментарий</DataPath>
+					<ContextMenu name="СписокРеализацийКомментарийКонтекстноеМеню" id="105"/>
+					<ExtendedTooltip name="СписокРеализацийКомментарийРасширеннаяПодсказка" id="106"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийКонтрагент" id="38">
+					<DataPath>СписокРеализаций.Контрагент</DataPath>
+					<ContextMenu name="СписокРеализацийКонтрагентКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="СписокРеализацийКонтрагентРасширеннаяПодсказка" id="40"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийДоговорКонтрагента" id="41">
+					<DataPath>СписокРеализаций.ДоговорКонтрагента</DataPath>
+					<ContextMenu name="СписокРеализацийДоговорКонтрагентаКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="СписокРеализацийДоговорКонтрагентаРасширеннаяПодсказка" id="43"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийСуммаДокумента" id="98">
+					<DataPath>СписокРеализаций.СуммаДокумента</DataPath>
+					<ContextMenu name="СписокРеализацийСуммаДокументаКонтекстноеМеню" id="99"/>
+					<ExtendedTooltip name="СписокРеализацийСуммаДокументаРасширеннаяПодсказка" id="100"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийВидОперации" id="20">
+					<DataPath>СписокРеализаций.ВидОперации</DataPath>
+					<ContextMenu name="СписокРеализацийВидОперацииКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СписокРеализацийВидОперацииРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийОрганизация" id="23">
+					<DataPath>СписокРеализаций.Организация</DataPath>
+					<ContextMenu name="СписокРеализацийОрганизацияКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СписокРеализацийОрганизацияРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийСклад" id="26">
+					<DataPath>СписокРеализаций.Склад</DataPath>
+					<ContextMenu name="СписокРеализацийСкладКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="СписокРеализацийСкладРасширеннаяПодсказка" id="28"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийПодразделениеОрганизации" id="29">
+					<DataPath>СписокРеализаций.ПодразделениеОрганизации</DataPath>
+					<ContextMenu name="СписокРеализацийПодразделениеОрганизацииКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="СписокРеализацийПодразделениеОрганизацииРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<CheckBoxField name="СписокРеализацийДеятельностьНаПатенте" id="32">
+					<DataPath>СписокРеализаций.ДеятельностьНаПатенте</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокРеализацийДеятельностьНаПатентеКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="СписокРеализацийДеятельностьНаПатентеРасширеннаяПодсказка" id="34"/>
+				</CheckBoxField>
+				<LabelField name="СписокРеализацийПатент" id="35">
+					<DataPath>СписокРеализаций.Патент</DataPath>
+					<ContextMenu name="СписокРеализацийПатентКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="СписокРеализацийПатентРасширеннаяПодсказка" id="37"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийСпособЗачетаАвансов" id="44">
+					<DataPath>СписокРеализаций.СпособЗачетаАвансов</DataPath>
+					<ContextMenu name="СписокРеализацийСпособЗачетаАвансовКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="СписокРеализацийСпособЗачетаАвансовРасширеннаяПодсказка" id="46"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийТипЦен" id="47">
+					<DataPath>СписокРеализаций.ТипЦен</DataPath>
+					<ContextMenu name="СписокРеализацийТипЦенКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="СписокРеализацийТипЦенРасширеннаяПодсказка" id="49"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийВалютаДокумента" id="50">
+					<DataPath>СписокРеализаций.ВалютаДокумента</DataPath>
+					<ContextMenu name="СписокРеализацийВалютаДокументаКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="СписокРеализацийВалютаДокументаРасширеннаяПодсказка" id="52"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийКурсВзаиморасчетов" id="53">
+					<DataPath>СписокРеализаций.КурсВзаиморасчетов</DataPath>
+					<ContextMenu name="СписокРеализацийКурсВзаиморасчетовКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="СписокРеализацийКурсВзаиморасчетовРасширеннаяПодсказка" id="55"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийКратностьВзаиморасчетов" id="56">
+					<DataPath>СписокРеализаций.КратностьВзаиморасчетов</DataPath>
+					<ContextMenu name="СписокРеализацийКратностьВзаиморасчетовКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="СписокРеализацийКратностьВзаиморасчетовРасширеннаяПодсказка" id="58"/>
+				</LabelField>
+				<CheckBoxField name="СписокРеализацийСуммаВключаетНДС" id="59">
+					<DataPath>СписокРеализаций.СуммаВключаетНДС</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокРеализацийСуммаВключаетНДСКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="СписокРеализацийСуммаВключаетНДСРасширеннаяПодсказка" id="61"/>
+				</CheckBoxField>
+				<CheckBoxField name="СписокРеализацийУдалитьУчитыватьНДС" id="62">
+					<DataPath>СписокРеализаций.УдалитьУчитыватьНДС</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокРеализацийУдалитьУчитыватьНДСКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="СписокРеализацийУдалитьУчитыватьНДСРасширеннаяПодсказка" id="64"/>
+				</CheckBoxField>
+				<LabelField name="СписокРеализацийСчетУчетаРасчетовСКонтрагентом" id="65">
+					<DataPath>СписокРеализаций.СчетУчетаРасчетовСКонтрагентом</DataPath>
+					<ContextMenu name="СписокРеализацийСчетУчетаРасчетовСКонтрагентомКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="СписокРеализацийСчетУчетаРасчетовСКонтрагентомРасширеннаяПодсказка" id="67"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийСчетУчетаРасчетовПоАвансам" id="68">
+					<DataPath>СписокРеализаций.СчетУчетаРасчетовПоАвансам</DataPath>
+					<ContextMenu name="СписокРеализацийСчетУчетаРасчетовПоАвансамКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="СписокРеализацийСчетУчетаРасчетовПоАвансамРасширеннаяПодсказка" id="70"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийСчетУчетаРасчетовПоТаре" id="71">
+					<DataPath>СписокРеализаций.СчетУчетаРасчетовПоТаре</DataPath>
+					<ContextMenu name="СписокРеализацийСчетУчетаРасчетовПоТареКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="СписокРеализацийСчетУчетаРасчетовПоТареРасширеннаяПодсказка" id="73"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийУдалитьСчетУчетаДоходовПоТаре" id="74">
+					<DataPath>СписокРеализаций.УдалитьСчетУчетаДоходовПоТаре</DataPath>
+					<ContextMenu name="СписокРеализацийУдалитьСчетУчетаДоходовПоТареКонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="СписокРеализацийУдалитьСчетУчетаДоходовПоТареРасширеннаяПодсказка" id="76"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийУдалитьСчетУчетаРасходовПоТаре" id="77">
+					<DataPath>СписокРеализаций.УдалитьСчетУчетаРасходовПоТаре</DataPath>
+					<ContextMenu name="СписокРеализацийУдалитьСчетУчетаРасходовПоТареКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="СписокРеализацийУдалитьСчетУчетаРасходовПоТареРасширеннаяПодсказка" id="79"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийУдалитьСтатьяДоходовИРасходовПоТаре" id="80">
+					<DataPath>СписокРеализаций.УдалитьСтатьяДоходовИРасходовПоТаре</DataPath>
+					<ContextMenu name="СписокРеализацийУдалитьСтатьяДоходовИРасходовПоТареКонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="СписокРеализацийУдалитьСтатьяДоходовИРасходовПоТареРасширеннаяПодсказка" id="82"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийСчетНаОплатуПокупателю" id="83">
+					<DataPath>СписокРеализаций.СчетНаОплатуПокупателю</DataPath>
+					<ContextMenu name="СписокРеализацийСчетНаОплатуПокупателюКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="СписокРеализацийСчетНаОплатуПокупателюРасширеннаяПодсказка" id="85"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийГрузоотправитель" id="86">
+					<DataPath>СписокРеализаций.Грузоотправитель</DataPath>
+					<ContextMenu name="СписокРеализацийГрузоотправительКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="СписокРеализацийГрузоотправительРасширеннаяПодсказка" id="88"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийГрузополучатель" id="89">
+					<DataPath>СписокРеализаций.Грузополучатель</DataPath>
+					<ContextMenu name="СписокРеализацийГрузополучательКонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="СписокРеализацийГрузополучательРасширеннаяПодсказка" id="91"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийАдресДоставки" id="92">
+					<DataPath>СписокРеализаций.АдресДоставки</DataPath>
+					<ContextMenu name="СписокРеализацийАдресДоставкиКонтекстноеМеню" id="93"/>
+					<ExtendedTooltip name="СписокРеализацийАдресДоставкиРасширеннаяПодсказка" id="94"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийБанковскийСчетОрганизации" id="95">
+					<DataPath>СписокРеализаций.БанковскийСчетОрганизации</DataPath>
+					<ContextMenu name="СписокРеализацийБанковскийСчетОрганизацииКонтекстноеМеню" id="96"/>
+					<ExtendedTooltip name="СписокРеализацийБанковскийСчетОрганизацииРасширеннаяПодсказка" id="97"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийОтветственный" id="101">
+					<DataPath>СписокРеализаций.Ответственный</DataPath>
+					<ContextMenu name="СписокРеализацийОтветственныйКонтекстноеМеню" id="102"/>
+					<ExtendedTooltip name="СписокРеализацийОтветственныйРасширеннаяПодсказка" id="103"/>
+				</LabelField>
+				<CheckBoxField name="СписокРеализацийРучнаяКорректировка" id="107">
+					<DataPath>СписокРеализаций.РучнаяКорректировка</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокРеализацийРучнаяКорректировкаКонтекстноеМеню" id="108"/>
+					<ExtendedTooltip name="СписокРеализацийРучнаяКорректировкаРасширеннаяПодсказка" id="109"/>
+				</CheckBoxField>
+				<LabelField name="СписокРеализацийРуководитель" id="110">
+					<DataPath>СписокРеализаций.Руководитель</DataPath>
+					<ContextMenu name="СписокРеализацийРуководительКонтекстноеМеню" id="111"/>
+					<ExtendedTooltip name="СписокРеализацийРуководительРасширеннаяПодсказка" id="112"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийГлавныйБухгалтер" id="113">
+					<DataPath>СписокРеализаций.ГлавныйБухгалтер</DataPath>
+					<ContextMenu name="СписокРеализацийГлавныйБухгалтерКонтекстноеМеню" id="114"/>
+					<ExtendedTooltip name="СписокРеализацийГлавныйБухгалтерРасширеннаяПодсказка" id="115"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийОтпускПроизвел" id="116">
+					<DataPath>СписокРеализаций.ОтпускПроизвел</DataPath>
+					<ContextMenu name="СписокРеализацийОтпускПроизвелКонтекстноеМеню" id="117"/>
+					<ExtendedTooltip name="СписокРеализацийОтпускПроизвелРасширеннаяПодсказка" id="118"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийУдалитьЗаРуководителяПоПриказу" id="119">
+					<DataPath>СписокРеализаций.УдалитьЗаРуководителяПоПриказу</DataPath>
+					<ContextMenu name="СписокРеализацийУдалитьЗаРуководителяПоПриказуКонтекстноеМеню" id="120"/>
+					<ExtendedTooltip name="СписокРеализацийУдалитьЗаРуководителяПоПриказуРасширеннаяПодсказка" id="121"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийУдалитьЗаГлавногоБухгалтераПоПриказу" id="122">
+					<DataPath>СписокРеализаций.УдалитьЗаГлавногоБухгалтераПоПриказу</DataPath>
+					<ContextMenu name="СписокРеализацийУдалитьЗаГлавногоБухгалтераПоПриказуКонтекстноеМеню" id="123"/>
+					<ExtendedTooltip name="СписокРеализацийУдалитьЗаГлавногоБухгалтераПоПриказуРасширеннаяПодсказка" id="124"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийЗаЗаказчикаНаОсновании" id="125">
+					<DataPath>СписокРеализаций.ЗаЗаказчикаНаОсновании</DataPath>
+					<ContextMenu name="СписокРеализацийЗаЗаказчикаНаОснованииКонтекстноеМеню" id="126"/>
+					<ExtendedTooltip name="СписокРеализацийЗаЗаказчикаНаОснованииРасширеннаяПодсказка" id="127"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийДоверенностьНомер" id="128">
+					<DataPath>СписокРеализаций.ДоверенностьНомер</DataPath>
+					<ContextMenu name="СписокРеализацийДоверенностьНомерКонтекстноеМеню" id="129"/>
+					<ExtendedTooltip name="СписокРеализацийДоверенностьНомерРасширеннаяПодсказка" id="130"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийДоверенностьДата" id="131">
+					<DataPath>СписокРеализаций.ДоверенностьДата</DataPath>
+					<ContextMenu name="СписокРеализацийДоверенностьДатаКонтекстноеМеню" id="132"/>
+					<ExtendedTooltip name="СписокРеализацийДоверенностьДатаРасширеннаяПодсказка" id="133"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийДоверенностьВыдана" id="134">
+					<DataPath>СписокРеализаций.ДоверенностьВыдана</DataPath>
+					<ContextMenu name="СписокРеализацийДоверенностьВыданаКонтекстноеМеню" id="135"/>
+					<ExtendedTooltip name="СписокРеализацийДоверенностьВыданаРасширеннаяПодсказка" id="136"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийДоверенностьЧерезКого" id="137">
+					<DataPath>СписокРеализаций.ДоверенностьЧерезКого</DataPath>
+					<ContextMenu name="СписокРеализацийДоверенностьЧерезКогоКонтекстноеМеню" id="138"/>
+					<ExtendedTooltip name="СписокРеализацийДоверенностьЧерезКогоРасширеннаяПодсказка" id="139"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийВидЭлектронногоДокумента" id="140">
+					<DataPath>СписокРеализаций.ВидЭлектронногоДокумента</DataPath>
+					<ContextMenu name="СписокРеализацийВидЭлектронногоДокументаКонтекстноеМеню" id="141"/>
+					<ExtendedTooltip name="СписокРеализацийВидЭлектронногоДокументаРасширеннаяПодсказка" id="142"/>
+				</LabelField>
+				<CheckBoxField name="СписокРеализацийДокументБезНДС" id="143">
+					<DataPath>СписокРеализаций.ДокументБезНДС</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокРеализацийДокументБезНДСКонтекстноеМеню" id="144"/>
+					<ExtendedTooltip name="СписокРеализацийДокументБезНДСРасширеннаяПодсказка" id="145"/>
+				</CheckBoxField>
+				<LabelField name="СписокРеализацийЗаРуководителяНаОсновании" id="146">
+					<DataPath>СписокРеализаций.ЗаРуководителяНаОсновании</DataPath>
+					<ContextMenu name="СписокРеализацийЗаРуководителяНаОснованииКонтекстноеМеню" id="147"/>
+					<ExtendedTooltip name="СписокРеализацийЗаРуководителяНаОснованииРасширеннаяПодсказка" id="148"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийЗаГлавногоБухгалтераНаОсновании" id="149">
+					<DataPath>СписокРеализаций.ЗаГлавногоБухгалтераНаОсновании</DataPath>
+					<ContextMenu name="СписокРеализацийЗаГлавногоБухгалтераНаОснованииКонтекстноеМеню" id="150"/>
+					<ExtendedTooltip name="СписокРеализацийЗаГлавногоБухгалтераНаОснованииРасширеннаяПодсказка" id="151"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийПеревозчик" id="152">
+					<DataPath>СписокРеализаций.Перевозчик</DataPath>
+					<ContextMenu name="СписокРеализацийПеревозчикКонтекстноеМеню" id="153"/>
+					<ExtendedTooltip name="СписокРеализацийПеревозчикРасширеннаяПодсказка" id="154"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийМаркаАвтомобиля" id="155">
+					<DataPath>СписокРеализаций.МаркаАвтомобиля</DataPath>
+					<ContextMenu name="СписокРеализацийМаркаАвтомобиляКонтекстноеМеню" id="156"/>
+					<ExtendedTooltip name="СписокРеализацийМаркаАвтомобиляРасширеннаяПодсказка" id="157"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийРегистрационныйЗнакАвтомобиля" id="158">
+					<DataPath>СписокРеализаций.РегистрационныйЗнакАвтомобиля</DataPath>
+					<ContextMenu name="СписокРеализацийРегистрационныйЗнакАвтомобиляКонтекстноеМеню" id="159"/>
+					<ExtendedTooltip name="СписокРеализацийРегистрационныйЗнакАвтомобиляРасширеннаяПодсказка" id="160"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийВодитель" id="161">
+					<DataPath>СписокРеализаций.Водитель</DataPath>
+					<ContextMenu name="СписокРеализацийВодительКонтекстноеМеню" id="162"/>
+					<ExtendedTooltip name="СписокРеализацийВодительРасширеннаяПодсказка" id="163"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийВодительскоеУдостоверение" id="164">
+					<DataPath>СписокРеализаций.ВодительскоеУдостоверение</DataPath>
+					<ContextMenu name="СписокРеализацийВодительскоеУдостоверениеКонтекстноеМеню" id="165"/>
+					<ExtendedTooltip name="СписокРеализацийВодительскоеУдостоверениеРасширеннаяПодсказка" id="166"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийКраткоеНаименованиеГруза" id="167">
+					<DataPath>СписокРеализаций.КраткоеНаименованиеГруза</DataPath>
+					<ContextMenu name="СписокРеализацийКраткоеНаименованиеГрузаКонтекстноеМеню" id="168"/>
+					<ExtendedTooltip name="СписокРеализацийКраткоеНаименованиеГрузаРасширеннаяПодсказка" id="169"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийСопроводительныеДокументы" id="170">
+					<DataPath>СписокРеализаций.СопроводительныеДокументы</DataPath>
+					<ContextMenu name="СписокРеализацийСопроводительныеДокументыКонтекстноеМеню" id="171"/>
+					<ExtendedTooltip name="СписокРеализацийСопроводительныеДокументыРасширеннаяПодсказка" id="172"/>
+				</LabelField>
+				<CheckBoxField name="СписокРеализацийДеятельностьНаТорговомСборе" id="173">
+					<DataPath>СписокРеализаций.ДеятельностьНаТорговомСборе</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокРеализацийДеятельностьНаТорговомСбореКонтекстноеМеню" id="174"/>
+					<ExtendedTooltip name="СписокРеализацийДеятельностьНаТорговомСбореРасширеннаяПодсказка" id="175"/>
+				</CheckBoxField>
+				<LabelField name="СписокРеализацийОтветственныйЗаОформление" id="176">
+					<DataPath>СписокРеализаций.ОтветственныйЗаОформление</DataPath>
+					<ContextMenu name="СписокРеализацийОтветственныйЗаОформлениеКонтекстноеМеню" id="177"/>
+					<ExtendedTooltip name="СписокРеализацийОтветственныйЗаОформлениеРасширеннаяПодсказка" id="178"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийСведенияОТранспортировкеИГрузе" id="179">
+					<DataPath>СписокРеализаций.СведенияОТранспортировкеИГрузе</DataPath>
+					<ContextMenu name="СписокРеализацийСведенияОТранспортировкеИГрузеКонтекстноеМеню" id="180"/>
+					<ExtendedTooltip name="СписокРеализацийСведенияОТранспортировкеИГрузеРасширеннаяПодсказка" id="181"/>
+				</LabelField>
+				<CheckBoxField name="СписокРеализацийПеревозкаАвтотранспортом" id="182">
+					<DataPath>СписокРеализаций.ПеревозкаАвтотранспортом</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокРеализацийПеревозкаАвтотранспортомКонтекстноеМеню" id="183"/>
+					<ExtendedTooltip name="СписокРеализацийПеревозкаАвтотранспортомРасширеннаяПодсказка" id="184"/>
+				</CheckBoxField>
+				<CheckBoxField name="СписокРеализацийЕстьМаркируемаяПродукцияГИСМ" id="185">
+					<DataPath>СписокРеализаций.ЕстьМаркируемаяПродукцияГИСМ</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокРеализацийЕстьМаркируемаяПродукцияГИСМКонтекстноеМеню" id="186"/>
+					<ExtendedTooltip name="СписокРеализацийЕстьМаркируемаяПродукцияГИСМРасширеннаяПодсказка" id="187"/>
+				</CheckBoxField>
+				<LabelField name="СписокРеализацийНомерЧекаККМ" id="188">
+					<DataPath>СписокРеализаций.НомерЧекаККМ</DataPath>
+					<ContextMenu name="СписокРеализацийНомерЧекаККМКонтекстноеМеню" id="189"/>
+					<ExtendedTooltip name="СписокРеализацийНомерЧекаККМРасширеннаяПодсказка" id="190"/>
+				</LabelField>
+				<CheckBoxField name="СписокРеализацийЭтоУниверсальныйДокумент" id="191">
+					<DataPath>~СписокРеализаций.ЭтоУниверсальныйДокумент</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокРеализацийЭтоУниверсальныйДокументКонтекстноеМеню" id="192"/>
+					<ExtendedTooltip name="СписокРеализацийЭтоУниверсальныйДокументРасширеннаяПодсказка" id="193"/>
+				</CheckBoxField>
+				<LabelField name="СписокРеализацийСпособДоставки" id="194">
+					<DataPath>~СписокРеализаций.СпособДоставки</DataPath>
+					<ContextMenu name="СписокРеализацийСпособДоставкиКонтекстноеМеню" id="195"/>
+					<ExtendedTooltip name="СписокРеализацийСпособДоставкиРасширеннаяПодсказка" id="196"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийНомерДляОтслеживания" id="197">
+					<DataPath>~СписокРеализаций.НомерДляОтслеживания</DataPath>
+					<ContextMenu name="СписокРеализацийНомерДляОтслеживанияКонтекстноеМеню" id="198"/>
+					<ExtendedTooltip name="СписокРеализацийНомерДляОтслеживанияРасширеннаяПодсказка" id="199"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийМаркаПрицепа" id="200">
+					<DataPath>СписокРеализаций.МаркаПрицепа</DataPath>
+					<ContextMenu name="СписокРеализацийМаркаПрицепаКонтекстноеМеню" id="201"/>
+					<ExtendedTooltip name="СписокРеализацийМаркаПрицепаРасширеннаяПодсказка" id="202"/>
+				</LabelField>
+				<LabelField name="СписокРеализацийРегистрационныйЗнакПрицепа" id="203">
+					<DataPath>СписокРеализаций.РегистрационныйЗнакПрицепа</DataPath>
+					<ContextMenu name="СписокРеализацийРегистрационныйЗнакПрицепаКонтекстноеМеню" id="204"/>
+					<ExtendedTooltip name="СписокРеализацийРегистрационныйЗнакПрицепаРасширеннаяПодсказка" id="205"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ЗагрузкаПТИУИзФайла</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокРеализаций" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список реализаций</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.РеализацияТоваровУслуг</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПометкаУдаления</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Проведен</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Выбрать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Выбрать</Action>
+		</Command>
+	</Commands>
+</Form>
